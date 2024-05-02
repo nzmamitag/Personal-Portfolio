@@ -17,16 +17,16 @@ function App() {
       <Router>
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" variant="dark" data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="/" className='neds'><span className='letterN'>N</span>eds</Navbar.Brand>
+            <Navbar.Brand href="/" className='neds links'><span className='letterN'>N</span>eds</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
               </Nav>
               <Nav>
-                <Nav.Link href='/'>Home</Nav.Link>
-                <Nav.Link href='/aboutMe'>About Me</Nav.Link>
-                <Nav.Link href='/projects'>Projects</Nav.Link>
-                <Nav.Link href='/contactMe'>Contact Me</Nav.Link>
+                <Nav.Link href='/' className='links'>Home</Nav.Link>
+                <Nav.Link href='/aboutMe' className='links'>About Me</Nav.Link>
+                <Nav.Link href='/projects' className='links'>Projects</Nav.Link>
+                <Nav.Link href='/contactMe' className='links'>Contact Me</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

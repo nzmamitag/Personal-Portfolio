@@ -4,10 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import ContactMe from './components/ContactMe';
+const Home = React.lazy(() => import('./components/Home'));
+const AboutMe = React.lazy(() => import('./components/AboutMe'));
+const Projects = React.lazy(() => import('./components/Projects'));
+const ContactMe = React.lazy(() => import('./components/ContactMe'));
 
 function App() {
 

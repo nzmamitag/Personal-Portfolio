@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect }from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Projects.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -9,12 +11,18 @@ import cookie from '../assets/images/cookie.png';
 import tut from '../assets/images/tut-point.png';
 
 function Projects() {
+
+    // Initialize AOS animation library
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
-        <div className='projectsContainer'>
+        <div className='projectsContainer' >
             <h1>Projects</h1>
             <div className="projects">
-                <div className="column1">
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                <div className="column1" data-aos="fade-in">
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src="https://www.thoughtco.com/thmb/o8ytjuR8vXInybPA6OQ7SSw-cw0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Blogger.svg-57f268d63df78c690fe5d003.png" />
                         <Card.Body className='cardBody'>
                             <Card.Title>Simple HTML Blogger</Card.Title>
@@ -24,7 +32,7 @@ function Projects() {
                             <Button className="button" href="https://nzmamitag.github.io/Blogger/" target='_blank'>See Demo</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src={canIUse} />
                         <Card.Body className='cardBody'>
                             <Card.Title>Can I use website</Card.Title>
@@ -34,7 +42,7 @@ function Projects() {
                             <Button className="button" href="https://nzmamitag.github.io/Can-I-Use-Website-Clone/" target='_blank'>See Demo</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src={python} />
                         <Card.Body className='cardBody'>
                             <Card.Title>Python website</Card.Title>
@@ -44,7 +52,7 @@ function Projects() {
                             <Button className="button" href="https://nzmamitag.github.io/Python-Website/" target='_blank'>See Demo</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src={bgchooser} />
                         <Card.Body className='cardBody'>
                             <Card.Title>Background Chooser</Card.Title>
@@ -55,8 +63,8 @@ function Projects() {
                         </Card.Body>
                     </Card>
                 </div>
-                <div className="column2">
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                <div className="column2" data-aos="fade-in">
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src={cookie} />
                         <Card.Body className='cardBody'>
                             <Card.Title>Fortune Cookie</Card.Title>
@@ -66,7 +74,7 @@ function Projects() {
                             <Button className="button" href="https://nzmamitag.github.io/Fortune-cookie/" target='_blank'>See Demo</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src={tut} />
                         <Card.Body className='cardBody'>
                             <Card.Title>Tutorials Point</Card.Title>
@@ -76,7 +84,7 @@ function Projects() {
                             <Button className="button" href="https://nzmamitag.github.io/tutorials-point/" target='_blank'>See Demo</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src="https://www.thoughtco.com/thmb/o8ytjuR8vXInybPA6OQ7SSw-cw0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Blogger.svg-57f268d63df78c690fe5d003.png" />
                         <Card.Body className='cardBody'>
                             <Card.Title>Simple HTML Blogger</Card.Title>
@@ -86,7 +94,7 @@ function Projects() {
                             <Button className="button" href="https://nzmamitag.github.io/Blogger/" target='_blank'>See Demo</Button>
                         </Card.Body>
                     </Card>
-                    <Card className="cardContainer" style={{ width: '18rem' }}>
+                    <Card className="cardContainer" style={{ width: '18rem' }} data-aos="fade-in">
                         <Card.Img className="cardImg" variant="top" src="https://www.thoughtco.com/thmb/o8ytjuR8vXInybPA6OQ7SSw-cw0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Blogger.svg-57f268d63df78c690fe5d003.png" />
                         <Card.Body className='cardBody'>
                             <Card.Title>Simple HTML Blogger</Card.Title>

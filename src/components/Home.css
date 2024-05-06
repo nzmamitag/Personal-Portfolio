@@ -1,7 +1,7 @@
 .homeContainer {
     display: flex;
     flex: 1;
-    height: 90vh;
+    height: 90dvh;
     margin-top: 70px;
     -webkit-animation: homeContainer 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: homeContainer 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

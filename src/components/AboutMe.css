@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    height: 100% auto;
 }
 
 .aboutMeContainer>h1 {
@@ -334,5 +335,18 @@
     .certificationsCol2 {
         flex-direction: column;
 
+    }
+
+
+    .carousel {
+        width: 300px;
+        height: 300px;
+    }
+
+    .carouselImage {
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
     }
 }

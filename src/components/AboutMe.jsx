@@ -124,7 +124,7 @@ function AboutMe() {
             <section className="section3">
                 <h2>Experience</h2>
                 <div className="experience">
-                    <div className="leftExperience" data-aos='fade-right'>
+                    <div className="leftExperience" data-aos='fade-in'>
                         <h3>IT Support Staff <span className='date'>(September 2023 - March 2024)</span></h3>
                         <h4>Sumtech Enterprises, Baguio City</h4>
                         <ul>
@@ -134,7 +134,7 @@ function AboutMe() {
                             <li>Supervised interns on day-to-day activities</li>
                         </ul>
                     </div>
-                    <div className="rightExperience" data-aos='fade-left'>
+                    <div className="rightExperience" data-aos='fade-in'>
                         <Carousel className='carousel'>
                             <Carousel.Item interval={1000}>
                                 <img src={sumtech1} alt="" className='carouselImage' />
@@ -164,7 +164,7 @@ function AboutMe() {
                     </div>
                 </div>
                 <div className="experience experience2">
-                    <div className="leftExperience" data-aos='fade-right'>
+                    <div className="leftExperience" data-aos='fade-in'>
                         <Carousel className='carousel'>
                             <Carousel.Item interval={1000}>
                                 <img src={intern1} alt="" className='carouselImage' />
@@ -180,7 +180,7 @@ function AboutMe() {
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className="rightExperience" data-aos='fade-left'>
+                    <div className="rightExperience" data-aos='fade-in'>
                         <h3>Junior Front-End Mobile Developer <span className='date'>(June – August 2023)</span></h3>
                         <h4>Internship at Bitshares Labs Incorporation (BLINC)</h4>
                         <ul>

@@ -24,9 +24,9 @@ function App() {
               </Nav>
               <Nav>
                 <Nav.Link href='/' className='links'>Home</Nav.Link>
-                <Nav.Link href='/aboutMe' className='links'>About Me</Nav.Link>
-                <Nav.Link href='/projects' className='links'>Projects</Nav.Link>
-                <Nav.Link href='/contactMe' className='links'>Contact Me</Nav.Link>
+                <Nav.Link href='./aboutMe' className='links'>About Me</Nav.Link>
+                <Nav.Link href='./projects' className='links'>Projects</Nav.Link>
+                <Nav.Link href='./contactMe' className='links'>Contact Me</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

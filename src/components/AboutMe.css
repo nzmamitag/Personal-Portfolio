@@ -292,7 +292,10 @@
     }
 
     .technologies1 {
-        gap: 10px;
+        gap: 5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .technologies1>img {
@@ -344,9 +347,7 @@
     }
 
     .carouselImage {
-        padding: 10px;
         width: 300px;
         height: 300px;
-        object-fit: contain;
     }
 }

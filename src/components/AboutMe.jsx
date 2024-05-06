@@ -113,10 +113,10 @@ function AboutMe() {
                             <img src={blender} alt="blender" />
                             <img src={computer} alt="computer" />
                             <img src={capcut} alt="capcut" />
-                            <img src={picsart} alt="picsart" />
                         </div>
                         <div className="technologies1">
                             <img src={office} alt="office" />
+                            <img src={picsart} alt="picsart" />
                         </div>
                     </div>
                 </div>

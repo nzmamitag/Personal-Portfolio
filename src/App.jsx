@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" variant="dark" data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="/" className='neds links'><span className='letterN'>N</span>eds</Navbar.Brand>
+            <Navbar.Brand href="/" className='neds'><span className='letterN'>N</span>eds</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">

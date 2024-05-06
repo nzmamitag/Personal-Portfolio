@@ -237,3 +237,31 @@
     transform: translate(3px, 3px);
     box-shadow: 0px 0px var(--main-color);
 }
+
+/* Tablet Screen View 990px*/
+@media only screen and (max-width: 990px) {
+    .contactContainer>h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile Screen View 480px*/
+@media only screen and (max-width: 480px) {
+    .contactContainer>h1 {
+        font-size: 3.5rem;
+    }
+
+    .contactMeContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .contactsContainer {
+        padding: 10px;
+        gap: 5px;
+        margin-bottom: 0;
+    }
+}

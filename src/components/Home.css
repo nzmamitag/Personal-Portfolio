@@ -88,3 +88,62 @@
     transform: scale(1);
     cursor: pointer;
 }
+
+/* Tablet Screen View */
+@media only screen and (max-width: 990px) {
+    .rightContainer>img {
+        max-width: 320px;
+    }
+
+    .leftContainer>h1 {
+        font-size: 3.5rem;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .role {
+        flex-direction: column;
+    }
+
+    .role>h2 {
+        font-size: 3.5rem;
+    }
+
+    .roleAnimation {
+        font-size: 3.5rem;
+    }
+}
+
+/* Mobile Screen View */
+@media only screen and (max-width: 480px) {
+    .homeContainer {
+        flex-direction: column-reverse;
+    }
+
+    .rightContainer>img {
+        max-width: 220px;
+    }
+
+    .leftContainer>h1 {
+        font-size: 3rem;
+    }
+
+    .name {
+        font-size: 3.3rem;
+    }
+
+    .role {
+        flex-direction: column;
+    }
+
+    .role>h2 {
+        font-size: 2.8rem;
+    }
+
+    .roleAnimation {
+        font-size: 2.8rem;
+        margin-bottom: -20px;
+    }
+}

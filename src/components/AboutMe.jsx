@@ -76,36 +76,48 @@ function AboutMe() {
                 <div className="leftAboutSection2">
                     <h2>Skills and Technologies</h2>
                     <div className="technologies" data-aos="fade-in">
-                        <img src={html} alt="html" />
-                        <img src={css} alt="css" />
-                        <img src={js} alt="js" />
-                        <img src={jquery} alt="jquery" />
-                        <img src={bootstrap} alt="bootstrap" />
-                        <img src={react} alt="react" />
-                        <img src={reactbootstrap} alt="reactbootstrap" />
-                        <img src={ux} alt="ux" />
-                        <img src={rwd} alt="rwd" />
-                        <img src={materialUI} alt="materialUI" />
+                        <div className="technologies1">
+                            <img src={html} alt="html" />
+                            <img src={css} alt="css" />
+                            <img src={js} alt="js" />
+                            <img src={jquery} alt="jquery" />
+                            <img src={bootstrap} alt="bootstrap" />
+                        </div>
+                        <div className="technologies1">
+                            <img src={react} alt="react" />
+                            <img src={reactbootstrap} alt="reactbootstrap" />
+                            <img src={ux} alt="ux" />
+                            <img src={rwd} alt="rwd" />
+                            <img src={materialUI} alt="materialUI" />
+                        </div>
                     </div>
                     <div className="technologies" data-aos="fade-in">
-                        <img src={java} alt="java" />
-                        <img src={php} alt="php" />
-                        <img src={express} alt="express" />
-                        <img src={node} alt="node" />
-                        <img src={socket} alt="socket" />
-                        <img src={codeigniter} alt="codeigniter" />
-                        <img src={mvc} alt="mvc" />
-                        <img src={mysql} alt="mysql" />
-                        <img src={git} alt="git" />
-                        <img src={github} alt="github" />
+                        <div className="technologies1">
+                            <img src={java} alt="java" />
+                            <img src={php} alt="php" />
+                            <img src={express} alt="express" />
+                            <img src={node} alt="node" />
+                            <img src={socket} alt="socket" />
+                        </div>
+                        <div className="technologies1">
+                            <img src={codeigniter} alt="codeigniter" />
+                            <img src={mvc} alt="mvc" />
+                            <img src={mysql} alt="mysql" />
+                            <img src={git} alt="git" />
+                            <img src={github} alt="github" />
+                        </div>
                     </div>
                     <div className="technologies" data-aos="fade-in">
-                        <img src={figma} alt="figma" />
-                        <img src={blender} alt="blender" />
-                        <img src={computer} alt="computer" />
-                        <img src={capcut} alt="capcut" />
-                        <img src={picsart} alt="picsart" />
-                        <img src={office} alt="office" />
+                        <div className="technologies1">
+                            <img src={figma} alt="figma" />
+                            <img src={blender} alt="blender" />
+                            <img src={computer} alt="computer" />
+                            <img src={capcut} alt="capcut" />
+                            <img src={picsart} alt="picsart" />
+                        </div>
+                        <div className="technologies1">
+                            <img src={office} alt="office" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -151,7 +163,7 @@ function AboutMe() {
                         </Carousel>
                     </div>
                 </div>
-                <div className="experience">
+                <div className="experience experience2">
                     <div className="leftExperience" data-aos='fade-right'>
                         <Carousel className='carousel'>
                             <Carousel.Item interval={1000}>
@@ -180,7 +192,7 @@ function AboutMe() {
             </section>
             <section className="section4" data-aos="fade-in">
                 <h2>Training</h2>
-               <h3> <a href="https://drive.google.com/file/d/18f-iPovXLbZPpbxXH-FiE2LxDYXez83Y/view?usp=sharing" target='_blank'>Village 88 Full Stack Web Development Training</a><span className='date'>(January – April 2024)</span></h3>
+                <h3> <a href="https://drive.google.com/file/d/18f-iPovXLbZPpbxXH-FiE2LxDYXez83Y/view?usp=sharing" target='_blank'>Village 88 Full Stack Web Development Training</a><span className='date'>(January – April 2024)</span></h3>
                 <ul>
                     <li>Accomplished 16-weeks of intensive full stack web development training</li>
                     <li>Learned industry best coding practices</li>
@@ -190,51 +202,62 @@ function AboutMe() {
             <section className="section5" data-aos="zoom-in-down">
                 <h2>Certifications</h2>
                 <div className="certifications">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={webcert} />
-                        <Card.Body className='cardBody'>
-                            <Card.Title>Proficient in Web Fundamentals Track</Card.Title>
-                            <Card.Text>
-                                Successfully cloned a given webpage using pure
-                                HTML and CSS in a span of 4 hours limit.
-                            </Card.Text>
-                            <Button className="button" href="https://drive.google.com/file/d/1MgbO4vAhAf604Q6H0DPXdWFUhOI6MNfR/view?usp=sharing" target='_blank'>See Certificate</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={phpcert} />
-                        <Card.Body className='cardBody'>
-                            <Card.Title>Proficient in Advance PHP Track</Card.Title>
-                            <Card.Text>
-                                Coded a given wireframe using HTML, CSS, CodeIgniter,
-                                and MySQL in a span of 8 hours.
-                            </Card.Text>
-                            <Button className="button" href="https://drive.google.com/file/d/1Vi6UqIM4_OHOQcUx1PzLDDzfS66vGoLC/view?usp=sharing" target='_blank'>See Certificate</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={jscert} />
-                        <Card.Body className='cardBody'>
-                            <Card.Title>Proficient in Advance JavaScript Track</Card.Title>
-                            <Card.Text>
-                                Coded a given wireframe using HTML, CSS, JavaScript,
-                                Express, NodeJS, Sockets.io in a span of 7 hours.
-                            </Card.Text>
-                            <Button className="button" href="https://drive.google.com/file/d/1j4OdYcfeuLYAvJ9lEAf6jt66oJM3GVQB/view?usp=sharing" target='_blank'>See Certificate</Button>
-                        </Card.Body>
-                    </Card>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={fecert} />
-                        <Card.Body className='cardBody'>
-                            <Card.Title>Proficient in Front-end Track</Card.Title>
-                            <Card.Text>
-                                Coded a given wireframe using ReactJS and React
-                                Bootstrap in a span of 7 hours.
-                            </Card.Text>
-                            <Button className="button" href="https://drive.google.com/file/d/164q-CH_mcH6WbbZeWkkeagMZAllIvFcV/view?usp=sharing" target='_blank'>See Certificate</Button>
-                        </Card.Body>
-                    </Card>
-
+                    <div className="certificationsCol1">
+                        <div className="certificate1">
+                            <Card style={{ width: '18rem' }} data-aos="fade-in">
+                                <Card.Img variant="top" src={webcert} />
+                                <Card.Body className='cardBody'>
+                                    <Card.Title>Proficient in Web Fundamentals Track</Card.Title>
+                                    <Card.Text>
+                                        Successfully cloned a given webpage using pure
+                                        HTML and CSS in a span of 4 hours limit.
+                                    </Card.Text>
+                                    <Button className="button" href="https://drive.google.com/file/d/1MgbO4vAhAf604Q6H0DPXdWFUhOI6MNfR/view?usp=sharing" target='_blank'>See Certificate</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                        <div className="certificate2">
+                            <Card style={{ width: '18rem' }} data-aos="fade-in">
+                                <Card.Img variant="top" src={phpcert} />
+                                <Card.Body className='cardBody'>
+                                    <Card.Title>Proficient in Advance PHP Track</Card.Title>
+                                    <Card.Text>
+                                        Coded a given wireframe using HTML, CSS, CodeIgniter,
+                                        and MySQL in a span of 8 hours.
+                                    </Card.Text>
+                                    <Button className="button" href="https://drive.google.com/file/d/1Vi6UqIM4_OHOQcUx1PzLDDzfS66vGoLC/view?usp=sharing" target='_blank'>See Certificate</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </div>
+                    <div className="certificationsCol2">
+                        <div className="certificate3">
+                            <Card style={{ width: '18rem' }} data-aos="fade-in">
+                                <Card.Img variant="top" src={jscert} />
+                                <Card.Body className='cardBody'>
+                                    <Card.Title>Proficient in Advance JavaScript Track</Card.Title>
+                                    <Card.Text>
+                                        Coded a given wireframe using HTML, CSS, JavaScript,
+                                        Express, NodeJS, Sockets.io in a span of 7 hours.
+                                    </Card.Text>
+                                    <Button className="button" href="https://drive.google.com/file/d/1j4OdYcfeuLYAvJ9lEAf6jt66oJM3GVQB/view?usp=sharing" target='_blank'>See Certificate</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                        <div className="certificate4">
+                            <Card style={{ width: '18rem' }} data-aos="fade-in">
+                                <Card.Img variant="top" src={fecert} />
+                                <Card.Body className='cardBody'>
+                                    <Card.Title>Proficient in Front-end Track</Card.Title>
+                                    <Card.Text>
+                                        Coded a given wireframe using ReactJS and React
+                                        Bootstrap in a span of 7 hours.
+                                    </Card.Text>
+                                    <Button className="button" href="https://drive.google.com/file/d/164q-CH_mcH6WbbZeWkkeagMZAllIvFcV/view?usp=sharing" target='_blank'>See Certificate</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

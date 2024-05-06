@@ -26,11 +26,12 @@
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+    filter: drop-shadow(2px 2px 15px var(--primary-color));
 }
 
 .leftAboutContainer {
     display: flex;
-    border: 5px solid var(--secondary-color);
+    border: 5px solid var(--primary-color);
     flex-direction: column;
     flex: .7;
     padding: 40px;
@@ -85,7 +86,12 @@
     align-items: center;
 }
 
-.technologies>img {
+.technologies1 {
+    display: flex;
+    gap: 20px;
+}
+
+.technologies1>img {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -94,12 +100,15 @@
     padding: 5px;
 }
 
+.technologies1>img:hover {
+    filter: drop-shadow(2px 2px 20px var(--primary-color));
+}
+
 .section3 {
     display: flex;
     flex-direction: column;
     height: 100dvh auto;
 }
-
 
 .experience {
     display: flex;
@@ -157,21 +166,173 @@
 
 .certifications {
     display: flex;
-    gap: 50px;
     justify-content: center;
+    gap: 50px;
 }
 
-.cardBody{
+.certificationsCol1,
+.certificationsCol2 {
+    display: flex;
+    gap: 50px;
+}
+
+.cardBody {
     color: var(--bg-color);
     background-color: var(--primary-color);
 }
 
-.button{
-   background-color: var(--bg-color);
-   color: var(--tertiary-color);
+.button {
+    background-color: var(--bg-color);
+    color: var(--tertiary-color);
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--bg-color);
     color: var(--secondary-color);
+}
+
+/* Tablet Screen View 990px*/
+@media only screen and (max-width: 990px) {
+
+    .aboutMeContainer>h1 {
+        font-size: 3rem;
+    }
+
+    .rightImage {
+        flex: .4;
+    }
+
+    .rightImage>img {
+        max-width: 360px;
+    }
+
+    .leftAboutContainer {
+        flex: .6;
+        padding: 15px;
+        margin-left: 20px;
+        border-radius: 2% 13%;
+    }
+
+    .leftAboutContainer>p {
+        font-size: 1.1rem;
+    }
+
+    .leftAboutSection2>h2,
+    .section3>h2,
+    .section4>h2,
+    .section5>h2 {
+        font-size: 2.5rem;
+    }
+
+    .section2 {
+        display: flex;
+        margin: 80px 0;
+    }
+
+    .technologies {
+        flex-direction: column;
+    }
+
+    .technologies1>img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .certifications {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* Mobile Screen View 480px*/
+@media only screen and (max-width: 480px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    .aboutMeContainer>h1 {
+        font-size: 2.5rem;
+    }
+
+    .rightImage {
+        flex: 1;
+    }
+
+    .rightImage>img {
+        max-width: 260px;
+    }
+
+    .leftAboutContainer {
+        flex: 1;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 3% 10%;
+    }
+
+    .leftAboutContainer>p {
+        font-size: 1rem;
+    }
+
+    .leftAboutSection2>h2,
+    .section3>h2,
+    .section4>h2,
+    .section5>h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+
+    .technologies {
+        flex-direction: column;
+    }
+
+    .technologies1 {
+        gap: 10px;
+    }
+
+    .technologies1>img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section2 {
+        margin: 0;
+    }
+
+    .experience {
+        flex-direction: column-reverse;
+    }
+
+    .experience2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftExperience,
+    .rightExperience {
+        padding: 20px;
+    }
+
+    .date {
+        font-size: .9rem;
+    }
+
+    .section4>h3 {
+        text-align: center;
+    }
+
+    .section4>h3>.date {
+        display: block;
+        padding: 10px;
+    }
+
+    .certificationsCol1,
+    .certificationsCol2 {
+        flex-direction: column;
+
+    }
 }

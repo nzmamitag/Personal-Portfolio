@@ -20,7 +20,9 @@ body {
 }
 
 .links {
-  margin: 0 10px;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.658);
 }
 
 .links:hover,

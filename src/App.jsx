@@ -3,7 +3,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
@@ -28,10 +28,10 @@ function App() {
               <Nav className="me-auto">
               </Nav>
               <Nav>
-                <Nav.Link href='/' className='links'>Home</Nav.Link>
-                <Nav.Link href='/aboutMe' className='links'>About Me</Nav.Link>
-                <Nav.Link href='/projects' className='links'>Projects</Nav.Link>
-                <Nav.Link href='/contactMe' className='links'>Contact Me</Nav.Link>
+                <Nav><Link to='/' className='links'>Home</Link></Nav>
+                <Nav><Link to='/aboutMe' className='links'>About Me</Link></Nav>
+                <Nav><Link to='/projects' className='links'>Projects</Link></Nav>
+                <Nav><Link to='/contactMe' className='links'>Contact Me</Link></Nav>
               </Nav>
             </Navbar.Collapse>
           </Container>

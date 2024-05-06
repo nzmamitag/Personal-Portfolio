@@ -60,10 +60,10 @@ function AboutMe() {
         <div className="aboutMeContainer">
             <h1>About Me</h1>
             <section className="section1">
-                <div className="rightImage" data-aos="fade-left">
+                <div className="rightImage" data-aos="fade-up">
                     <img src={Me} alt="Me" />
                 </div>
-                <div className="leftAboutContainer" data-aos="fade-right">
+                <div className="leftAboutContainer" data-aos="fade-up">
                     <p>
                         Hi! I'm Neds Zamoranos Mamitag, an aspiring <strong>Web Designer and Frontend Developer.</strong> I graduated from the <i>University of the Cordilleras</i> in Baguio City, Benguet, with a Bachelor of Science in Information Technology. During college, I was exposed to Mobile App Development but encountered difficulty finding a job in web development after graduation. To gain experience, I worked as a technical support staff, focusing on hardware-related tasks like reformatting and building computers.
                     </p>

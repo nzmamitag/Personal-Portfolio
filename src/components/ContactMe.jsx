@@ -1,4 +1,4 @@
-import React, { useEffect }from 'react';
+import React, { useEffect } from 'react';
 import './ContactMe.css';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
@@ -15,13 +15,16 @@ function ContactMe() {
     }, []);
 
     const downloadResume = (url) => {
-        const fileName = url.split('/').pop();
-        const aTag = document.createElement('a');
-        aTag.href = url;
-        aTag.setAttribute('download', fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
+        fetch(url).then(response.response.blob()).then(blob => {
+            const blobURL = window.URL.createObjectURL(new Blob([blob]))
+            const fileName = url.split('/').pop();
+            const aTag = document.createElement('a');
+            aTag.href = blobURL;
+            aTag.setAttribute('download', fileName);
+            document.body.appendChild(aTag);
+            aTag.click();
+            aTag.remove();
+        })
     }
 
     return (

@@ -3,7 +3,7 @@ import './ContactMe.css';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
 import HomeIcon from '@mui/icons-material/Home';
-const resume = 'http://localhost:5173/contactMe/Neds_Mamitag_Resume.pdf';
+const resume = 'https://neds-personal-portfolio.vercel.app/contactMe/Neds_Mamitag_Resume.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

@@ -125,7 +125,7 @@ function AboutMe() {
                 <h2>Experience</h2>
                 <div className="experience">
                     <div className="leftExperience" data-aos='fade-in'>
-                        <h3>IT Support Staff <span className='date'>(September 2023 - March 2024)</span></h3>
+                        <h3>IT Support Staff <span className='date'>(March 2023 - March 2024)</span></h3>
                         <h4>Sumtech Enterprises, Baguio City</h4>
                         <ul>
                             <li>Fixed and satisfied 2 – 4 customer’s computer problems a day</li>

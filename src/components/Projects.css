@@ -23,9 +23,10 @@
 
 .cardImg {
     width: 100%;
-    max-width: 200px;
+    padding: 5px;
+    border-radius: 10px;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .button {
